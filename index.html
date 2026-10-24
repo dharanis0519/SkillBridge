@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillBridge | Career Skill Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/">SkillBridge<span>.</span></a><span class="tag">CAREER READINESS TOOL</span></header>
+<main class="container">
+  <section class="hero">
+    <div class="eyebrow">YOUR NEXT STEP STARTS HERE</div>
+    <h1>Turn your skills into<br><span>a career roadmap.</span></h1>
+    <p>Choose a role, add the skills you already have, and discover what to learn next.</p>
+  </section>
+  <section class="panel">
+    <div class="section-heading"><div><span class="step">01</span><h2>Choose your target role</h2></div><span class="muted">Select a career path</span></div>
+    <select id="roleSelect" aria-label="Target job role"><option value="">Loading roles...</option></select>
+    <div class="section-heading skills-heading"><div><span class="step">02</span><h2>Your current skills</h2></div><span class="muted">Add one skill at a time</span></div>
+    <div class="skill-entry"><input id="skillInput" placeholder="e.g. Java, SQL, HTML" maxlength="60"><button id="addSkill" class="secondary">Add skill +</button></div>
+    <div id="skillChips" class="chips"><span class="empty">No skills added yet.</span></div>
+    <button id="analyzeBtn" class="primary">Analyze my skill gap <span>→</span></button>
+    <p id="message" class="message" role="status"></p>
+  </section>
+  <section id="results" class="panel results hidden">
+    <div class="section-heading"><div><span class="step">03</span><h2>Your readiness report</h2></div><span class="muted" id="resultRole"></span></div>
+    <div class="score-row"><div class="score" id="score">0%</div><div class="score-copy"><h3>Role readiness</h3><p>Based on the required skills matched in this demo.</p></div></div>
+    <div class="progress"><div id="progressFill"></div></div>
+    <div class="report-grid">
+      <div><h3 class="green">Skills you have</h3><ul id="matchedList"></ul></div>
+      <div><h3 class="orange">Skills to develop</h3><ul id="missingList"></ul></div>
+    </div>
+    <div class="tip"><strong>Next step</strong><p id="recommendation"></p></div>
+  </section>
+  <footer>SkillBridge · A Java + MySQL portfolio project</footer>
+</main>
+<script src="app.js"></script>
+</body></html>
