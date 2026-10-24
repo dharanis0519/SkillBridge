@@ -58,12 +58,3 @@ The app creates the `skillbridge` database (if your MySQL user has permission), 
   "skills": ["Java", "SQL", "OOP"]
 }
 ```
-
-
-
-
-## Notes
-
-- This is a portfolio/demo project, not a production career assessment tool.
-- The readiness percentage is a simple count of matching required skills; it is not an employment prediction.
-- Do not commit passwords or other secrets to GitHub. Use environment variables for credentials.
