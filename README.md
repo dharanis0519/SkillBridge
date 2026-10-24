@@ -59,22 +59,8 @@ The app creates the `skillbridge` database (if your MySQL user has permission), 
 }
 ```
 
-## GitHub upload
 
-1. Create a new empty repository named `SkillBridge`.
-2. Extract this project folder.
-3. Open a terminal in the folder and run:
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Add SkillBridge career skill analyzer"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/SkillBridge.git
-   git push -u origin main
-   ```
-
-Replace `YOUR-USERNAME` with your GitHub username.
 
 ## Notes
 
